@@ -3,80 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>海龜奇遇記</title>
+<title>Untitled Story</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:.1em}0%,to{top:0px}}@keyframes shudder{25%{left:.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%,to{transform:translateX(0em)}5%,25%,45%{transform:translateX(-1em)}15%,35%,55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%,to{transform:translateY(0em)}5%,25%,45%{transform:translateY(-1em)}15%,35%,55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%,8.1%,82.1%,31.1%,38.1%,44.1%,40.1%,47.1%,74.1%,16.1%,27.1%,72.1%,24.1%,95.1%,6.1%,36.1%,20.1%,4.1%,91.1%,14.1%,87.1%,to{left:0px;top:0px}8%,82%,31%,38%,44%{left:-1px}40%,47%,74%,16%,27%{left:1px}72%,24%,95%,6%,36%{top:-1px}20%,4%,91%,14%,87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:.2}64%{opacity:.4}78%{opacity:.6}87%{opacity:.8}92%,to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:#000;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" name="' attr(name) '">'}tw-open-button[goto]{display:none}.debug-mode tw-open-button[replay],.debug-mode tw-open-button[goto]{display:inline}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 .5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,.5)}.debug-mode tw-expression[title]:not([title=""]){cursor:help}.debug-mode tw-hook{background-color:rgba(0,85,255,.1) !important}.debug-mode tw-hook::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,.1) !important}.debug-mode tw-collapsed::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 50%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0.25) 0%, hsla(14, 100%, 87%, 0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, hsla(14, 100%, 87%, 0) 0%, hsla(14, 100%, 87%, 0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,.2)}.debug-mode tw-enchantment{animation:enchantment .5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,.1)}.debug-mode tw-include::before{font-size:.8rem;padding-left:.2rem;padding-right:.2rem;vertical-align:top;content:attr(type) ' "' attr(name) '"'}.debug-dialogs tw-backdrop:not(.eval-replay):not(.harlowe-crash){pointer-events:none;opacity:.1}tw-eval-replay tw-eval-code,tw-eval-replay tw-eval-explanation{max-height:20vh;overflow:auto;margin:10px auto}tw-eval-replay tw-eval-code{display:block;font-family:monospace;padding-bottom:1ex;border-bottom:2px solid gray}tw-eval-replay tw-eval-explanation{display:block;text-align:center}tw-eval-replay tw-eval-explanation>code{white-space:pre-wrap}tw-eval-replay tw-eval-explanation>code.from-block{width:40%;display:inline-block;text-align:left;max-height:4em;overflow-wrap:anywhere;overflow-y:scroll}tw-eval-replay tw-eval-explanation>code.from-block~.to-desc{width:calc(40% - 2em);margin-left:2em;display:inline-block}tw-eval-replay tw-eval-explanation>code.from-block+span::after{content:"..."}tw-eval-replay tw-eval-explanation>code.from-inline{text-align:right}tw-eval-replay tw-eval-explanation>:nth-child(2){white-space:pre}tw-eval-replay tw-eval-explanation>.to-desc{text-align:left}tw-eval-replay tw-eval-explanation>table{width:100%;margin-top:1em}tw-eval-replay tw-eval-explanation>table td{white-space:pre-wrap !important;word-wrap:anywhere}tw-eval-replay tw-eval-reason{text-align:center;font-size:80%;font-style:italic;display:block}tw-eval-replay tw-eval-it{text-align:center;font-size:80%;display:block}tw-eval-replay tw-dialog-links{display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:14em;min-height:1em;padding:0em .5em .5em 1em;font-size:1.25em;font-family:sans-serif;color:#262626;background-color:#fff;border-left:solid #262626 2px;border-top:solid #262626 2px;border-top-left-radius:.5em;opacity:1}tw-debugger.fade-panel:not(:hover){opacity:.33}tw-debugger.theme-dark{color:#d9d9d9;background-color:#000}tw-debugger.theme-dark{border-color:#d9d9d9 rgba(0,0,0,0) rgba(0,0,0,0) #d9d9d9}tw-debugger select{margin-right:1em;width:12em}tw-debugger button,tw-debugger tw-link{border-radius:3px;border:solid #999 1px;margin:auto 4px;color:#262626;background-color:#fff;cursor:pointer}tw-debugger button.enabled,tw-debugger tw-link.enabled{color:#000;background-color:#d9d9d9;box-shadow:inset #999 3px 5px .5em}tw-debugger.theme-dark button,tw-debugger.theme-dark tw-link{color:#d9d9d9;background-color:#000;border-color:#666}tw-debugger.theme-dark button.enabled,tw-debugger.theme-dark tw-link.enabled{color:#e6e6e6;background-color:#424242;box-shadow:inset #666 3px 5px .5em}tw-debugger button{font-size:1em;overflow-x:hidden;text-overflow:ellipsis;white-space:pre}tw-debugger tw-link{font-size:1.25em;border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-debugger tw-link:hover{border-color:#262626;color:#262626}tw-debugger.theme-dark tw-link:hover{border-color:#d9d9d9;color:#d9d9d9}tw-debugger tw-dialog{background-color:#fff;color:#000;font-size:1.25em}tw-debugger.theme-dark tw-dialog{background-color:#000;color:#e6e6e6}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;overflow-y:scroll;overflow-x:hidden;border:inherit;box-sizing:content-box;background-color:#fff;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger.theme-dark .panel{background-color:#000;border-bottom-color:#666}tw-debugger .panel-source .panel-row-buttons{width:2rem}tw-debugger .panel-source .source-tags{width:20%;font-style:italic}tw-debugger .panel-row-source td{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere;max-height:8rem;padding:1rem}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background-color:#e6e6e6}tw-debugger .panel-tools .panel-rows>*,tw-debugger .panel-options .panel-rows>*{margin-top:.4rem;display:block}tw-debugger.theme-dark .panel-rows>div:nth-of-type(2n){background-color:#212121}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#575757;text-align:center}tw-debugger .panel-errors .panel-rows:empty+.panel-errors-bottom{display:none}tw-debugger.theme-dark .panel-variables .panel-rows:empty::before,tw-debugger.theme-dark .panel-enchantments .panel-rows:empty::before,tw-debugger.theme-dark .panel-errors .panel-rows:empty::before{color:#a8a8a8}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger th[data-col]{text-decoration:underline;cursor:pointer}tw-debugger th[data-col][data-order=asc]::after{content:"↓"}tw-debugger th[data-col][data-order=desc]::after{content:"↑"}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .storylet-exclusive,tw-debugger .storylet-urgent,tw-debugger .storylet-open{text-align:center}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:.8;font-size:.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#575757;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger.theme-dark .variable-type{color:#a8a8a8}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,.3)}tw-debugger .error-row>*{display:table-cell;padding:.25em .5em}tw-debugger .error-row .error-message[title]:not([title=""]){cursor:help}tw-debugger .error-row .error-passage{color:#575757}tw-debugger.theme-dark .error-row .error-passage{color:#a8a8a8}tw-debugger .storylet-row{background-color:rgba(193,240,225,.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(152,231,204,.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;background-color:#fff}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:#e6e6e6}tw-debugger .storylet-row.storylet-closed>:not(.storylet-lambda){opacity:.6}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .storylet-row .storylet-lambda{font-family:monospace;font-size:1rem;white-space:pre-wrap;overflow-wrap:anywhere}tw-debugger.theme-dark .storylet-row.storylet-closed{background-color:#000}tw-debugger.theme-dark .storylet-row.storylet-closed:nth-child(2n){background-color:#212121}tw-debugger .tabs{padding-bottom:.5em}tw-debugger .tab{border-radius:0px 0px .5em .5em;border-top:none;top:-2px}tw-debugger .resizer-h{position:absolute;height:14em;border-left:2px solid #999;border-right:2px solid #999;top:10px;left:4px;width:8px;cursor:ew-resize}tw-debugger.theme-dark .resizer-h{border-color:rgba(0,0,0,0) #666}tw-debugger .resizer-v{position:absolute;height:8px;border-top:2px solid #999;border-bottom:2px solid #999;margin-bottom:4px;top:4px;left:10px;width:95%;cursor:ns-resize;box-sizing:border-box}tw-debugger.theme-dark .resizer-v{border-color:#666 rgba(0,0,0,0)}tw-debugger mark{color:inherit;background-color:rgba(101,230,230,.3) !important}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media(min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%;border:solid #fff !important}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop~tw-backdrop{display:none}tw-link,.enchantment-link{cursor:pointer;color:#4169e1;font-weight:bold;text-decoration:none;transition:color .2s ease-in-out}tw-passage [style^=color] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^=color][hover=true] tw-link:hover,tw-passage [style*=" color"][hover=true] tw-link:hover,tw-passage [style^=color] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^=color][hover=true] .enchantment-link:hover,tw-passage [style*=" color"][hover=true] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#dd4b39}.visited{color:#6941e1}tw-passage [style^=color] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^=color][hover=true] .visited:hover,tw-passage [style*=" color"][hover=true] .visited:hover{color:inherit}.visited:hover{color:#e3e}tw-broken-link{color:#933;border-bottom:2px solid #933;cursor:not-allowed}tw-passage [style^=color] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^=color][hover=true] tw-broken-link:hover,tw-passage [style*=" color"][hover=true] tw-broken-link:hover{color:inherit}tw-link.enchantment-mouseover,.link.enchantment-mouseover,tw-expression.enchantment-mouseover>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border-bottom:2px dashed #999}tw-link.enchantment-mouseover:hover,tw-link.enchantment-mouseover:active,.link.enchantment-mouseover:hover,.link.enchantment-mouseover:active,tw-expression.enchantment-mouseover>tw-link:hover,tw-expression.enchantment-mouseover>tw-link:active{color:inherit}tw-link.enchantment-mouseover.enchantment-button,.link.enchantment-mouseover.enchantment-button,tw-expression.enchantment-mouseover>tw-link.enchantment-button{border-style:dashed}tw-link.enchantment-mouseout,.link.enchantment-mouseout,tw-expression.enchantment-mouseout>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;border:rgba(64,149,191,.6) 1px solid;border-radius:.2em}tw-link.enchantment-mouseout:hover,tw-link.enchantment-mouseout:active,.link.enchantment-mouseout:hover,.link.enchantment-mouseout:active,tw-expression.enchantment-mouseout>tw-link:hover,tw-expression.enchantment-mouseout>tw-link:active{color:inherit}tw-link.enchantment-mouseout:hover,.link.enchantment-mouseout:hover,tw-expression.enchantment-mouseout>tw-link:hover{background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 1px solid}tw-link.enchantment-dblclick,.link.enchantment-dblclick,tw-expression.enchantment-dblclick>tw-link{color:inherit;font-weight:inherit;transition:none;cursor:inherit;cursor:pointer;border:2px solid #999;border-radius:0}tw-link.enchantment-dblclick:hover,tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:hover,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:hover,tw-expression.enchantment-dblclick>tw-link:active{color:inherit}tw-link.enchantment-dblclick:active,.link.enchantment-dblclick:active,tw-expression.enchantment-dblclick>tw-link:active{background-color:#999}tw-link.enchantment-button,.link.enchantment-button,.enchantment-button:not(.link) tw-link,.enchantment-button:not(.link) .link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}.enchantment-button{display:block}.enchantment-clickblock{cursor:pointer;width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,.5);transition:color .2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 .5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 .5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,.75);border:rgba(0,0,0,0) 2px solid;border-radius:.2em}.enchantment-dblclickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;cursor:pointer;border:2px solid #999}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia,serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media(min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:rgba(0,0,0,0);font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=text]{background-color:rgba(0,0,0,0);font:inherit;color:inherit;border-style:none}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 .5em .5em .5em;vertical-align:middle}tw-story tw-noscript{animation:appear .8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media(min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*=width]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:.2;cursor:pointer}tw-icon[alt]:hover{opacity:.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:.2em;padding:.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:4px;border:1px solid rgba(255,255,255,.5);font-size:.8rem;margin:0 .2rem;padding:3px;white-space:pre}tw-folddown::after{content:"▶"}tw-folddown.open::after{content:"▼"}tw-open-button[replay]{display:none}tw-error tw-open-button,tw-eval-replay tw-open-button{display:inline !important}tw-open-button::after{content:attr(label)}tw-notifier{border-radius:.2em;padding:.2em;font-size:1rem;background-color:rgba(223,182,58,.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid #000;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:.3em 0 .6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,.6);background-color:#ff9}ins{color:rgba(0,0,0,.6);background-color:rgba(255,242,204,.5);border-radius:.5em;box-shadow:0em 0em .2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play 海龜奇遇記.</tw-noscript></noscript></tw-story>
-<tw-storydata name="海龜奇遇記" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="AD8CF1A1-4762-448F-974E-6D89803D4396" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="角色名字" tags="" position="700,250" size="100,100">在故事開始之前，請玩家為自己取名：
-(input-box: bind $name, &quot;XXX=&quot;,1,&quot;小明&quot;)
-(set:$name to &quot;小明&quot;)
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Untitled Story.</tw-noscript></noscript></tw-story>
+<tw-storydata name="Untitled Story" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="CB467E9A-07C9-43C2-B3D8-5CAB4BD2933B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="end" color="red"></tw-tag><tw-passagedata pid="1" name="角色名字設定" tags="" position="600,25" size="100,100">在故事開始之前，請玩家為自己取名：
+(input-box: bind $name, &quot;XXX=&quot;,1,&quot;蘇海生&quot;)
+(set:$name to &quot;蘇海生&quot;)
 
-[[故事展開]]</tw-passagedata><tw-passagedata pid="2" name="[在酒店休息带回宿舍" tags="" position="225,550" size="100,100">[下一頁]&lt;continue|
+以下是故事設定
+[展開]&lt;continue|
 (click-replace:?continue)
+(text-colour:green)[故事角色設定1：（野生動物保護家——3颗星：野生動物的英雄）]
+(text-colour:blue)[故事角色設定2：（野生動物保護家——2颗星：中級野生動物保護者）]
+(text-colour:magenta)[故事角色設定3：（野生動物保護家——1颗星：新手探險者）]
+(text-colour:orange)[故事角色設定4：（野生動物保護家--0.5颗星：“略有积极”的探險者]
+(text-colour:red)[故事角色設定5：（野生動物保護家--0颗星：對野生動物不關心]
 
-[[[在酒店休息带回宿舍]] 还是 [[參觀]]]
+[[故事展開]]</tw-passagedata><tw-passagedata pid="2" name="故事展開" tags="" position="600,150" size="100,100">在一個炎熱的夏天，$name來到馬來西亞東海岸的一個美麗度假村度假。度假村位於一片寧靜的沙灘邊，四周環繞著碧藍的大海和森林。$name是個充滿好奇心的人，雖然這是$name第一次來到海邊，但$name已經迫不及待想探索這片神祕的海域。聽那裡的工作人員說，如果幸運的話，傍晚可以親眼看見海龜上岸產卵的過程…
 
-[故事展開]&lt;continue|
-(click-replace:?continue)
-[在一个炎热的夏天，$name和家人来到(text-colour:cyan)[马来西亚东海岸]一个美丽的(text-colour:cyan)[马来西亚东海岸度假村度假]。度假村位于一片宁静的沙滩边，四周环绕着碧蓝的大海和棕榈树。
+於是傍晚$name決定……
+[[在房裡先休息]]
+[[到旁邊的森林走走看看]]
+[[跟隨工作人員參與特別的活動]]</tw-passagedata><tw-passagedata pid="3" name="在房裡先休息" tags="" position="325,300" size="100,100">選擇在房間休息的$name，錯過了海龜上岸產卵的過程……
 
-$name是个充满好奇心的小孩，虽然这是TA第一次来到海边，但TA已经迫不及待地想探索这片神秘的海域。
+聽著其他房客的小孩與ziji母親興奮的討論產卵過程，$name顯得有點失落。
 
-聽工作人員說，如果幸運的話，傍晚還可以親眼看見海龜上岸產卵的過程。
+於是$name認為.....
+[[明天一定要去看]]
+[[算了吧，錯過就錯過了]]</tw-passagedata><tw-passagedata pid="4" name="到旁邊的森林走走看看" tags="" position="1000,300" size="100,100">夏日的陽光明媚，通往森林的小徑吹來陣陣涼風。遠離海邊的森林顯得寂靜，偶爾傳來幾聲海鷗的鳴叫聲。  
 
-於是$name決定</tw-passagedata><tw-passagedata pid="3" name="參觀" tags="" position="375,425" size="100,100">[[[在酒店休息带回宿舍]] [下一頁]&lt;continue|
-(click-replace:?continue)
-[cdscadcas]</tw-passagedata><tw-passagedata pid="4" name="故事展開" tags="" position="700,375" size="100,100">在一个炎热的夏天，$name和家人来到(text-colour:cyan)[马来西亚东海岸一个美丽的度假村度假]。度假村位于一片宁静的沙滩边，四周环绕着碧蓝的大海和棕榈树。
+陽光透過斑駁的樹葉落在$name的肩上，驅散了涼風帶來的寒意。 $name一邊散步一邊欣賞風景，不知不覺走入森林的深處。
 
-$name是个(text-colour:yellow)[充满好奇心]的小孩，虽然这是$name第一次来到海边，但$name已经迫不及待地想探索这片神秘的海域。
-
-聽工作人員說，如果幸運的話，傍晚還(text-colour:red)[可以親眼看見海龜上岸產卵的過程]。
-
-於是$name決定
-
-[[在房裡休息]]
-[[跟隨工作人員參與特別的活動]]</tw-passagedata><tw-passagedata pid="5" name="在房裡休息" tags="" position="600,500" size="100,100">$name錯過了海龜上岸產卵的過程……
-聽著其他房客的小孩與他母親興奮的討論產卵過程，$name顯得(text-colour:cyan)[有點失落]。
-於是$name
-[[決定明天一定要去看]]
-[[算了吧，錯過就錯過了]]</tw-passagedata><tw-passagedata pid="6" name="跟隨工作人員參與特別的活動" tags="" position="775,500" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱秘的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
+當反應過來的時候，$name已經走到了小徑的分叉口…
+[[原路返回]]
+[[向右走]]
+[[向左走]]</tw-passagedata><tw-passagedata pid="5" name="跟隨工作人員參與特別的活動" tags="" position="600,300" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱秘的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
 
 $name屏住呼吸，跟在隊伍的最後，$name害怕驚動了這些神秘的海洋生物……
 
-工作人員指著前方不遠處，輕聲說道：『看，那就是海龜。』
+工作人員指著前方不遠處，輕聲說道：「看，那就是海龜。」
 
-[[看海龜]]</tw-passagedata><tw-passagedata pid="7" name="算了吧，錯過就錯過了" tags="" position="625,625" size="100,100">$name是個充滿好奇心的孩子，但(text-colour:yellow)[或許心情不佳]或缺少休息，所以提不起興致。
+[[看海龜]]</tw-passagedata><tw-passagedata pid="6" name="算了吧，錯過就錯過了" tags="" position="400,425" size="100,100">$name原本是個充滿好奇心的人，但或許是心情不佳或是缺少休息，所以提不起興致……
 
 $name一如既往地在沙灘上搗亂。$name踢倒了其他孩子建好的沙堡，把沙子抛向海浪，不時還故意把撿來的貝殼丟進海裡。
 
-晚上，度假村的工作人員告訴大家，沙灘上會有海龜產卵，並叮囑所有人要(text-colour:black)+(bg:white)[保持安靜]，不要打擾海龜。
+晚上，度假村的工作人員告訴大家，沙灘上會有海龜產卵，並叮囑所有人要保持安靜，不要打擾海龜。
 
-$name對這種活動並(text-colour:yellow)[不感興趣]，$name覺得這種東西無聊透頂。
+$name對這種活動並不感興趣，$name覺得這種東西無聊透頂。
 
 $name打定主意要
 [[偷偷溜出去]]
-[[在房裡休息]]</tw-passagedata><tw-passagedata pid="8" name="決定明天一定要去看" tags="" position="475,625" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱秘的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
+[[回去房間休息]]</tw-passagedata><tw-passagedata pid="7" name="明天一定要去看" tags="" position="200,425" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱密的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
 
 $name屏住呼吸，跟在隊伍的最後，$name害怕驚動了這些神秘的海洋生物……
 
-$name順著指示的方向看去，只見一隻巨大的(text-colour:lime)[綠海龜正緩慢地爬上沙灘]。它的動作很慢，但每一步都非常堅定。
+$name順著指示的方向看去，只見一隻巨大的綠海龜正緩慢地爬上沙灘。它的動作很慢，但每一步都非常堅定。
 
-$name感到一陣激動，這龐然大物讓$name覺得自己彷彿置身於一個奇幻的世界。
+$name感到一陣激動，這個龐然大物讓$name覺得自己彷彿置身於一個奇幻的世界。
 
-就在$name專注地看著海龜時，$name突然注意到沙灘的(text-colour:orange)[另一端有兩個身影在悄悄接近]。
+就在$name專注地看著海龜時，$name突然注意到沙灘的另一端有兩個身影在悄悄接近。
 
-$name選擇
+$name選擇[[靜悄悄地觀察他們]]。</tw-passagedata><tw-passagedata pid="8" name="靜悄悄地觀察他們" tags="" position="200,550" size="100,100">那些人躡手躡腳地靠近海龜，當他們靠近到足夠近時，其中一人開始迅速將海龜剛產下的蛋撿起，放入一個布袋中。
 
-[[靜悄悄地觀察他們]]
-[[告訴父母]]</tw-passagedata><tw-passagedata pid="9" name="靜悄悄地觀察他們" tags="" position="300,750" size="100,100">他們蹑手蹑腳地靠近海龜，其中一人開始迅速(text-colour:lime)[將海龜剛產下的蛋撿起]，放入一個布袋中。
+$name感到心頭一緊，並且立刻明白這兩個人是在偷海龜蛋。$name知道，海龜蛋是受法律保護的，偷走這些蛋意味著那些小海龜將失去生命的機會……
 
-$name感到心頭一緊，立刻明白這兩個人是在(text-colour:red)[偷海龜蛋]。$name知道，海龜蛋是受法律保護的動物，偷走海龜蛋意味著那些小生命將失去生存的機會……
-
-於是$name猶豫了片刻，然後
-[[袖手旁觀]]
-[[鼓起勇氣]]</tw-passagedata><tw-passagedata pid="10" name="袖手旁觀" tags="" position="200,875" size="100,100">$name感到心跳加速，$name知道這是(text-colour:yellow)[不對的行為]，海龜蛋是受保護的。
+於是，$name
+[[選擇袖手旁觀]]
+[[猶豫片刻，鼓起勇氣]]</tw-passagedata><tw-passagedata pid="9" name="選擇袖手旁觀" tags="" position="75,675" size="100,100">$name感到心跳加速，$name知道這是不對的行為，海龜蛋是受保護的。
 
 正當$name考慮是否要喊出聲來或者去告訴工作人員時，$name猶豫了。
 
@@ -84,33 +80,35 @@ $name想，也許這是別人的事，與自己無關。
 
 [繼續]&lt;continue|
 (click-replace:?continue)
-
 [$name站在那里，看著那兩個人將海龜蛋一顆顆偷走。
 
 雖然內心有些不安，$name想大聲呼叫，但$name最終還是選擇了沉默。
 
-$name心裡想着，(text-colour:orange)[如果自己什麼都不做，問題就不會變得複雜]，$name[[退縮了]]]
-</tw-passagedata><tw-passagedata pid="11" name="鼓起勇氣" tags="" position="375,875" size="100,100">$name大聲喊道：「快住手！你們不能這樣！」
+$name心裡想着，如果自己什麼都不做，問題就不會變得複雜，$name[[退縮了]]。]</tw-passagedata><tw-passagedata pid="10" name="猶豫片刻，鼓起勇氣" tags="" position="200,675" size="100,100">$name大聲喊道：「快住手！你們不能這樣！」
 
-$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到$name正站在那裡，目光堅定地看著他們。
+$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，目光堅定地看著他們。
 
 $name
-
 [[退縮了]]
+[[大聲呼叫，引起注意]]</tw-passagedata><tw-passagedata pid="11" name="退縮了" tags="" position="75,800" size="100,100">偷蛋者快速地完成了他們的工作，然後悄無聲息地離開了沙灘。
 
-[[繼續大聲呼喊直到引起人們注意]]</tw-passagedata><tw-passagedata pid="12" name="告訴父母" tags="" position="500,750" size="100,100"></tw-passagedata><tw-passagedata pid="13" name="回到度假村的房間裡" tags="" position="200,1125" size="100,100">那晚，$name躺在床上，久久無法入睡。
+$name眼睜睜地看著他們離去，心中感到一陣難以言表的失落。
 
-每當閉上眼睛，偷蛋的場景和那隻無助的海龜就會浮現在腦海中。
+$name看了看那隻依舊在產卵的海龜，感到內疚，但卻沒有勇氣去阻止發生的一切。
 
-$name知道自己錯過了可以改變事情的機會，但(text-colour:yellow)[現在一切都已經晚了]。
+當所有人都離開沙灘，返回度假村時，$name獨自一人落在隊伍的後面。
 
-[[第二天]]</tw-passagedata><tw-passagedata pid="14" name="第二天" tags="" position="200,1250" size="100,100">$name的心情變得沉重，不再像以往那樣活潑。
+那晚，$name躺在床上，久久無法入睡。
 
-$name(text-colour:yellow)[無法擺脫內心的負罪感]，但又不敢對任何人提起。
+每當$name閉上眼睛，偷蛋的場景和那隻無助的海龜就會浮現在腦海中。
+
+$name知道自己錯過了可以改變事情的機會，但現在一切都已經晚了。
+
+[[第二天]]</tw-passagedata><tw-passagedata pid="12" name="第二天" tags="end" position="75,925" size="100,100">$name的心情變得沉重，不再像以往那樣活潑。
+
+$name無法擺脫內心的負罪感，但又不敢對任何人提起。
 
 $name發現，選擇袖手旁觀並不能讓事情變得簡單，反而讓自己陷入了更深的懊悔中。
-
-這個故事提醒$name，面對不公和錯誤時，(text-colour:yellow)[沉默和旁觀並不是正確的選擇]。
 
 雖然$name沒有做壞事，但$name的沉默也間接地讓那些海龜蛋失去了生存的機會。
 
@@ -118,9 +116,15 @@ $name發現，選擇袖手旁觀並不能讓事情變得簡單，反而讓自己
 
 每當$name在互聯網看見海龜的新聞時，就會想起當晚的事。
 
-(text-colour:red)[故事結束]</tw-passagedata><tw-passagedata pid="15" name="繼續大聲呼喊直到引起人們注意" tags="" position="375,1000" size="100,100">$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個男孩正站在那裡，目光堅定地看著他們。
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
 
-$name(text-colour:yellow)[大聲呼喊]，成功引起了周圍人的注意。
+面對不公和錯誤時，沉默和旁觀並不是正確的選擇。
+
+野生動物保護家--0颗星：對野生動物不關心]]</tw-passagedata><tw-passagedata pid="13" name="大聲呼叫，引起注意" tags="" position="200,800" size="100,100">$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，目光堅定地看著他們。
+
+$name大聲呼喊，成功引起了周圍人的注意。
 
 度假村的工作人員和其他遊客也迅速跑了過來。
 
@@ -128,62 +132,196 @@ $name(text-colour:yellow)[大聲呼喊]，成功引起了周圍人的注意。
 
 工作人員立刻檢查了那些海龜蛋，確認它們沒有受到傷害後，才鬆了一口氣。
 
-工作人員向對$name的見義勇為表示感謝。
+工作人員對$name見義勇為的行為表示感謝，$name顫抖著說：這是應該的！
 
-$name顫抖著說，(text-colour:yellow)[這是應該的]！
+$name与工作人员道别，之後
+[[回去房間休息]]
+[[等待夜晚降臨，到海灘欣賞夜景]]</tw-passagedata><tw-passagedata pid="14" name="回去房間休息" tags="" position="200,925" size="100,100">过了几天，工作人員對$name的勇敢行為正式表示了感謝。
 
-[[繼續]]</tw-passagedata><tw-passagedata pid="16" name="退縮了" tags="" position="200,1000" size="100,100">
-偷蛋者快速地完成了他們的工作，然後悄無聲息地離開了沙灘。
+$name感到自豪，因為$name知道自己做了一件正確的事，幫助了那些即將誕生的小海龜。
 
-$name眼睜睜地看著他們離去，心中感到一陣難以言表的失落。
+當晚，度假村決定為$name和其家人舉辦了一場小小的慶祝活動，表揚$name的勇敢。
 
-$name看了看那隻依舊在產卵的海龜，(text-colour:lime)[感到內疚]，但卻沒有勇氣去阻止發生的一切。
+$name[[接受]]了度假村的好意。</tw-passagedata><tw-passagedata pid="15" name="等待夜晚降臨，到海灘欣賞夜景" tags="" position="325,925" size="100,100">這次意外救了海龜蛋，$name高興之餘也有一陣後怕。
 
-當所有人都離開沙灘，返回度假村時，$name獨自一人落在隊伍的後面。
+趁著夜晚重新回到海邊的沙灘走走，欣賞難得的夜景。重新回到沙灘上，望著已經被重新掩埋的沙坑，$name祈禱海龜蛋可以順利孵化。
 
-[[回到度假村的房間裡]]</tw-passagedata><tw-passagedata pid="17" name="保護海龜的重要性" tags="" position="375,1250" size="100,100">工作人員對$name的勇敢行為(text-colour:green)[表示了感謝]，並解釋了保護海龜的重要性。
+過了一會兒，$name決定回去房間，草叢傳來吵雜聲，有幾個高大的男子蒙著面，手裡拿著刀衝向$name。
 
-回到家後，$name將這個故事說給朋友們聽，朋友們紛紛對$name立起一個大拇指。
+“就是他！害我們的計劃落空！”
 
-這個經歷不僅讓$name成長為一個更勇敢的人，也讓$name更加(text-colour:green)[懂得保護自然和生命的珍貴]。
+$name
+[[拔腿就跑]]
+[[上前對峙]]</tw-passagedata><tw-passagedata pid="16" name="接受" tags="end" position="200,1050" size="100,100">$name感到自豪，因為$name知道自己做了一件正確的事，幫助了那些即將誕生的小海龜。
+
+工作人員對$name的勇敢行為表示了感謝，並向$name解釋了保護海龜的重要性。
+
+回到家後，$name將這個故事講給朋友們聽，朋友們紛紛對$name立起一個大拇指。
+
+這個經歷不僅讓$name成長為一個更勇敢的人，也讓$name更加懂得保護自然和生命的珍貴。
 
 這個故事成為了$name最難忘的記憶，而那天夜晚的勇敢行動，也給了$name一份內心的平靜和驕傲。
 
 保護海洋生物，人人有責。
 
-(text-colour:cyan)[結束]</tw-passagedata><tw-passagedata pid="18" name="偷偷溜出去" tags="" position="625,750" size="100,100">夜晚降臨，$name在其他人都前往沙灘觀看海龜時，悄悄地從後門溜了出去。
+(text-colour:green)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+你做得非常棒！海龜寶寶因為你可以回到大海的懷抱！
+
+獲得野生動物保護家——3颗星：野生動物英雄的稱號]]</tw-passagedata><tw-passagedata pid="17" name="拔腿就跑" tags="" position="325,1050" size="100,100">眼見刀就在眼前，$name決定拔腿就跑。
+
+藉著森林錯綜複雜的環境，$name暫時躲過了他們的追殺。
+
+正要喘氣之際，忽然看到有一隻馬來亞虎被困在森林的邊緣，同時看到有偷獵者正在逼近馬拉虎的身邊。
+
+$name： “這隻馬來亞虎孤立無援，偷獵者正在逼近。我該[[立刻行動]]，還是[[等待增援]]？”</tw-passagedata><tw-passagedata pid="18" name="上前對峙" tags="end" position="450,1050" size="100,100">“原來他們還有同夥！，我是絕對不會讓你們再傷害海龜的！”
+
+$name衝上前去和偷獵者扭打在一起。
+
+在一片混亂中，$name不敵對方被圍攻後，利器插入要害。偷獵者見狀選擇逃跑。
+
+由於之前發生海龜蛋被偷事件，周圍都沒有人。最後，$name去世。
+
+有游客发现了$name，赶紧报警，警方封锁现场，度假村收到了影响，游客量降低。在度假村全力配合下抓到了凶手。
+
+(text-colour:magenta)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+保護動物，不是要你賠上自己的性命，應該要明智的選擇正確的決策。但保護野生動物的決心，值得給一顆星。
+
+獲得野生動物保護家——1颗星：新手探險者]]</tw-passagedata><tw-passagedata pid="19" name="立刻行動" tags="" position="175,1175" size="100,100">$name立即行動，拯救馬來亞虎。
+
+$name： “我必須馬上行動，時間不等人，馬來虎虎的生命危在旦夕。”
+
+[[智取捕獵者]]
+[[直接行動]]</tw-passagedata><tw-passagedata pid="20" name="等待增援" tags="" position="325,1175" size="100,100">$name等待增援，策劃全面行動。
+
+$name： “我可以等待支援到來，這樣能更安全地展開行動，但這可能會讓馬來亞虎陷入危險。”
+
+[[等待巡山隊]]
+[[等待野生動物保護組織]]
+[[等待度假村]]</tw-passagedata><tw-passagedata pid="21" name="智取捕獵者" tags="end" position="75,1300" size="100,100">$name不顧自身的安危立刻行動，在那之前$name巧妙地使用聲東擊西將大部分的偷獵者引開，成功救下馬來亞虎，並在激烈的對峙中逼退了偷獵者。
+
+然而，在行動過程中，$name還是在對抗少數的偷獵時被重傷。成功逼退他們後，$name趕緊聯絡野生動物保護局，最後昏迷，被趕來的人緊急送往醫院。
+
+$name昏迷了整整一个星期，$name接受了治疗后就回到度假村收拾东西。
+
+$name为自己的勇敢赶到骄傲，但身体却因为受伤而留下后遗症，但$name不后悔。
+
+(text-colour:green)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+雖然留下了後遺症，也昏迷了一個星期，但他從不後悔自己的選擇，非常棒。
+
+獲得野生動物保護家——3颗星：野生動物的英雄的稱號]]</tw-passagedata><tw-passagedata pid="22" name="直接行動" tags="end" position="225,1300" size="100,100">$name決定立即採取行動，但由於缺乏準備和情報，$name在與偷獵者的衝突中失敗，導致馬來亞虎被捕殺。
+
+(text-colour:magenta)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+拯救老虎刻不容缓，但没有缜密的计划也是徒劳的。可这份心也是难得，值得夸奖。
+
+野生動物保護家——2颗星：中級野生動物保護者]]</tw-passagedata><tw-passagedata pid="23" name="等待巡山隊" tags="end" position="350,1300" size="100,100">$name決定等待增援，之後在巡山隊的協助下成功展開行動，偷獵者被逮捕，馬來亞虎得以獲救。
+
+然而，馬來亞虎在偷獵者到來前已經受傷，後續需要複雜的治療。
+
+雖然行動成功，但馬來亞虎的康復過程漫長，巡山隊和$name必須為它的治療和復健尋找更多資源，並加強保護區的安全措施。
+
+(text-colour:blue)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+拔腿就跑，或許是人的本性，但已經做得非常棒了！
+
+獲得野生動物保護家——2颗星：中級野生動物保護者]]</tw-passagedata><tw-passagedata pid="24" name="等待野生動物保護組織" tags="" position="475,1300" size="100,100">野生动物保护局训练有素，以最快的速度赶到现场，击退偷猎者，将他们逮捕归案。
+
+之后，$name決定與野生動物保護組織合作將重點放在未來的預防工作上。同時與地方政府合作，設置更嚴密的巡邏和監控系統，確保偷獵行為不再發生。
+
+他們成功建立了一個更安全的保護區體系，偷獵事件顯著減少，但這也需要持續的資源和人力投入來維持。
+
+$name也趁機[[回去房間休息]]。</tw-passagedata><tw-passagedata pid="25" name="等待度假村" tags="end" position="600,1300" size="100,100">$name打电话给度假村，決定等待度假村的增援，但由於高估了度假村的速度，馬來亞虎被偷獵者运走。
+
+雖然最終抓住了偷獵者，马来虎还是死了。
+
+$name失魂落魄地回去度假村，也没有透露关于马来虎的事情。
+
+$name十分懊悔，这一份愧疚将会伴随$name一辈子。
+
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+冷漠的態度讓馬來虎失去了性命，伸出援手的話就可以救馬來虎了呢！
+
+獲得野生動物保護家--0颗星：對野生動物不關心]]</tw-passagedata><tw-passagedata pid="26" name="偷偷溜出去" tags="" position="400,550" size="100,100">夜晚降臨，$name在其他人都前往沙灘觀看海龜時，悄悄地從後門溜了出去。
+
 $name來到一片較為僻靜的沙灘，打算尋找一些可以搗亂的目標。
-就在這時，$name看到一隻(text-colour:lime)[巨大的綠海龜正在沙灘上艱難地爬行……]
-$name心生一計，$name(text-colour:yellow)[悄悄走近海龜]，看到它開始挖坑準備產卵。
-於是$name打算
+
+就在這時，$name看到一隻巨大的綠海龜正在沙灘上艱難地爬行……
+
+$name心生一計，悄悄走近海龜，看到它開始挖坑準備產卵。
+
+於是$name打算……
 [[拿走幾顆海龜蛋]]
-[[安靜觀察其產卵過程]]</tw-passagedata><tw-passagedata pid="19" name="拿走幾顆海龜蛋" tags="" position="625,875" size="100,100">$name趁海龜不注意，用一根棍子撥開了沙子，從海龜的身後(text-colour:red)[偷偷拿走了幾顆剛剛產下的蛋]。
+[[安靜觀察產卵過程]]</tw-passagedata><tw-passagedata pid="27" name="拿走幾顆海龜蛋" tags="" position="450,675" size="100,100">$name趁海龜不注意，用一根棍子撥開了沙子，從海龜的身後偷偷拿走了幾顆剛剛產下的蛋。
 
-拿到蛋後，$name一陣竊喜，$name飛快地跑回度假村，把蛋藏在了自己的背包裡。
+拿到蛋後，$name一陣竊喜便飛快地跑回度假村，把蛋藏在了自己的背包裡。
 
-第二天，$name拿出這些蛋，向其他小朋友炫耀，並編了一個荒唐的故事，說這些蛋是在沙灘上挖出來的寶貝。
+第二天，$name拿出這些蛋，向其他朋友炫耀，並編了一個荒唐的故事，說這些蛋是在沙灘上挖出來的寶貝。
 
-然而，$name的行為(text-colour:yellow)[引起了工作人員的注意]。
+然而，$name的行為引起了工作人員的注意。
 
-經過調查發現海龜蛋被$name偷走，並很快找到了$name。
+[[故事繼續]]</tw-passagedata><tw-passagedata pid="28" name="故事繼續" tags="" position="400,800" size="100,100">經過調查，他們發現海龜蛋被偷走的事情，並很快找到了$name。
 
-[[接著]]</tw-passagedata><tw-passagedata pid="20" name="安靜觀察其產卵過程" tags="" position="750,875" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="將這次的經歷當作一次重要的教訓" tags="" position="700,1125" size="100,100">$name向家人坦白了自己的行為，並表達了深深的懊悔。
+度假村的經理嚴厲地批評了$name，並告訴$name，$name的行為可能會導致那些小海龜無法孵化，失去了生命的機會。
 
-家人聽後，沒有責罵$name，而是告訴$name，(text-colour:yellow)[犯錯並不可怕，重要的是能夠認識到錯誤並改正]。
+$name的父母陪著$name一同道歉。
 
-$name在家人的鼓勵下，開始積極(text-colour:green)[了解和保護野生動物]。$name加入了學校的環保小組，並與同學們一起參加各種保護海洋生物的活動。
+$name聽了後，雖然表面上依然不以為意，但內心卻感到了一絲不安。可$name仍舊沒有真正意識到自己行為的嚴重性。
 
-$name還寫了一篇關於海龜的報告，講述了自己那次難忘的經歷，並呼籲大家關注和保護海龜。
+度假結束後，$name回到了家，但發現自己心裡總是惦記著那次的海龜產卵事件。
 
-那次度假經歷成為了$name成長道路上的一個重要轉折點，$name從此以後對野生動物有了不一樣的使命。
+每當夜晚來臨，$name的腦海中會浮現出那隻海龜孤單地爬回大海的背影，以及自己偷走蛋時的情景。
 
-(text-colour:cyan)[結束]</tw-passagedata><tw-passagedata pid="22" name="變得沉默寡言，逐漸遠離了朋友" tags="" position="575,1125" size="100,100">$name內心的(text-colour:black)+(bg:white)[悔恨日益加深]，但卻不敢告訴任何人自己的所作所為。
+[[變得沉默寡言，逐漸遠離了朋友]]
+
+[[將這次的經歷當作一次重要的教訓]]</tw-passagedata><tw-passagedata pid="29" name="變得沉默寡言，逐漸遠離了朋友" tags="end" position="462.5,925" size="100,100">隨著時間的推移，$name變得沉默寡言，逐漸遠離了朋友們。
+
+$name內心的悔恨日益加深，但卻不敢告訴任何人自己的所作所為。
 
 那個夏天的度假經歷成了$name心中永遠的陰影，也讓$name付出了沉重的代價。
 
 這個故事教會了$name，任何不尊重生命的行為都會帶來不可彌補的後果，而$name必須獨自承擔這些後果。
 
-(text-colour:red)[結束]</tw-passagedata><tw-passagedata pid="23" name="下一頁" tags="" position="875,750" size="100,100">整個過程是那樣的神秘又令人感動，$name心中有一種說不出的感受，$name突然明白了生命的珍貴和偉大。
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+$name對野生動物漠不關心的態度，讓$name必須自行承擔後果。
+
+獲得野生動物保護家--0颗星：對野生動物不關心]]</tw-passagedata><tw-passagedata pid="30" name="將這次的經歷當作一次重要的教訓" tags="end" position="600,925" size="100,100">$name向家人坦白了自己的行為，並表達了深深的懊悔。
+
+家人聽後，沒有責罵$name，而是告訴$name，犯錯誤並不可怕，重要的是能夠認識到錯誤並改正。
+
+$name在家人的鼓勵下，開始積極了解和保護野生動物。$name加入了學校的環保小組，並與同學們一起參加各種保護海洋生物的活動。
+
+$name還寫了一篇關於海龜的報告，講述了自己那次難忘的經歷，並呼籲大家關注和保護海龜。
+
+那次度假經歷成為了$name成長道路上的一個重要轉折點，$name從此以後對野生動物有了不一樣的使命。
+
+(text-colour:orange)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+$name有改過自新的心態，讓他對野生動物開始有了不一樣的使命。
+
+獲得野生動物保護家--0.5颗星：“略有积极”的探險者]]</tw-passagedata><tw-passagedata pid="31" name="安靜觀察產卵過程" tags="end" position="325,675" size="100,100">$name安靜觀察海龜產卵的過程，之後便回去房間休息了。
+
+(text-colour:black)+(bg:white)[結束]</tw-passagedata><tw-passagedata pid="32" name="下一頁" tags="" position="600,550" size="100,100">整個過程是那樣的神秘又令人感動，$name心中有一種說不出的感受，$name突然明白了生命的珍貴和偉大。
 
 當海龜產完卵後，它小心翼翼地用沙子覆蓋住蛋，然後慢慢地轉身，朝大海的方向爬去。
 
@@ -195,41 +333,7 @@ $name知道，那些埋在沙中的蛋，會在不久的將來孵化出新的生
 
 但此時的$name覺得自己有些困了，於是他決定
 [[回房休息]]
-[[靜悄悄地觀察他們]]</tw-passagedata><tw-passagedata pid="24" name="回房休息" tags="" position="875,875" size="100,100">回到度假村，$name久久不能入睡，$name腦海中一直浮現著那隻海龜和它所產下的那些蛋。
-
-$name暗自決定，以後一定要盡自己所能去保護這些可愛的動物，讓更多的生命得以延續。
-
-這一夜的經歷深深地印在了$name的心裡。
-
-度假結束後，$name在學校裡講述了這個奇妙的故事，並開始關注海洋生物保護。
-
-$name的小小心願，是有一天能再回到那個沙灘，見證那些小海龜破殼而出、奔向大海的那一刻。
-
-這個故事讓$name懂得了生命的神奇和脆弱，也讓$name明白了保護自然的重要性。
-
-度假村的那一晚，成為了$name最難忘的回憶，也是開啟了$name與野生動物的奇妙緣分。
-
-(text-colour:yellow)[結束]</tw-passagedata><tw-passagedata pid="25" name="繼續" tags="" position="375,1125" size="100,100">工作人員對$name的勇敢行為(text-colour:green)[表示了感謝]。
-
-$name感到自豪，因為$name知道自己做了一件正確的事，幫助了那些即將誕生的小海龜。
-
-當晚，度假村決定為$name一家人舉辦了一場小小的慶祝活動，表揚$name的勇敢。
-
-$name接受了度假村的好意。
-
-[[保護海龜的重要性]]</tw-passagedata><tw-passagedata pid="26" name="接著" tags="" position="625,1000" size="100,100">度假村的經理(text-colour:white)+(bg:red)[嚴厲地批評]了$name，並告訴$name，這行為可能會(text-colour:white)+(bg:red)[導致那些小海龜無法孵化]，失去了生命的機會。
-
-$name的父母陪著$name一同道歉。
-
-$name聽了後，雖然表面上依然不以為意，但(text-colour:blue)[內心卻感到了一絲不安]。可$name仍舊沒有真正意識到自己行為的嚴重性。
-
-度假結束後，$name回到了家，但他發現自己心裡總是惦記著那次的海龜產卵事件。
-
-每當夜晚來臨，$name的腦海中會浮現出那隻海龜孤單地爬回大海的背影，以及自己偷走蛋時的情景。
-
-[[變得沉默寡言，逐漸遠離了朋友]]
-
-[[將這次的經歷當作一次重要的教訓]]</tw-passagedata><tw-passagedata pid="27" name="看海龜" tags="" position="775,625" size="100,100">$name順著指示的方向看去，只見一隻巨大的綠海龜正緩慢地爬上沙灘。
+[[靜悄悄地觀察他們]]</tw-passagedata><tw-passagedata pid="33" name="看海龜" tags="" position="600,425" size="100,100">$name順著指示的方向看去，只見一隻巨大的綠海龜正緩慢地爬上沙灘。
 
 $name非常激動，因為這是$name第一次看見海龜。
 
@@ -241,11 +345,232 @@ $name感到一陣激動，這個龐然大物讓$name覺得自己彷彿置身於�
 
 $name的眼睛一眨不眨地盯著，心中充滿了敬畏。
 
-終於，海龜在坑中開始產卵。
+終於，海龜在坑中開始產卵。一顆顆圓潤的蛋從它的身體裡滑落，輕輕地落在沙坑中。
 
-一顆顆圓潤的蛋從它的身體裡滑落，輕輕地落在沙坑中。
+[[下一頁]]</tw-passagedata><tw-passagedata pid="34" name="回房休息" tags="end" position="600,675" size="100,100">回到度假村，$name久久不能入睡，$name腦海中一直浮現著那些野生动物的神情。
 
-[[下一頁]]</tw-passagedata></tw-storydata>
+$name暗自決定，以後一定要盡自己所能去保護這些可愛的動物，讓更多的生命得以延續。
+這一夜的經歷深深地印在了$name的心裡。
+
+度假結束後，$name在學校裡講述了這個奇妙的故事，並開始關注海洋生物保護。
+
+這個故事讓$name懂得了生命的神奇和脆弱，也讓$name明白了保護自然的重要性。
+
+度假村的那一晚，成為了$name最難忘的回憶，也是開啟了$name與野生動物的奇妙緣分。
+
+(text-colour:orange)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+$name對野生動物的興趣只是建立字啊最初階段，希望以後會更進一步！
+
+獲得野生動物保護家--0.5颗星：“略有积极”的探險者稱號]]</tw-passagedata><tw-passagedata pid="35" name="原路返回" tags="" position="800,425" size="100,100">$name到度假村吃了自己喜歡的海鮮大餐，就回房間睡了一覺。
+
+睡夢中，$name彷彿聽見有聲音在呼喚。起床後決定……
+
+[[打遊戲]]
+
+[[尋找聲音的出處]]
+</tw-passagedata><tw-passagedata pid="36" name="向右走" tags="" position="1000,425" size="100,100">$name選擇向右走，繼續探知未知地點，感受大自然的奇妙。
+
+$name瞧著遠方的海邊，不想要湊熱鬧的$name決定繼續探索，欣賞森林的美景。
+
+越靠近森林的中心，路徑就越小，$name秉持著來都來了的心態嘗試繼續向前走，踩斷樹枝頭和撥開樹葉的聲音清晰迴響在耳邊，蟲鳴聲在周圍四起。
+
+這時，$name聽到了一陣陣鳴叫聲，低沉而短促的，聽起來像是柔和的咕噥聲或嗡嗡聲。類似低音的“哦哦哦”或“嗚嗚”，帶有一定的節奏性。
+
+於是$name……
+[[尋找聲音的出處]]
+[[無視聲音的干擾]]</tw-passagedata><tw-passagedata pid="37" name="向左走" tags="" position="1175,425" size="100,100"></tw-passagedata><tw-passagedata pid="38" name="打遊戲" tags="end" position="800,550" size="100,100">$name起床後，決定沖一個舒服的熱水澡，打遊戲打發時間。
+
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生對野生動物並不關心。
+
+獲得野生動物保護家--0颗星：對野生動物不關心的称号]]</tw-passagedata><tw-passagedata pid="39" name="尋找聲音的出處" tags="" position="925,550" size="100,100">$name轉頭到處觀望，企圖找到聲音的來源。密密麻麻的樹木上似乎有什麼在攢動。$name有點害怕，不知不覺屏氣警戒地觀望。此時樹上的聲響由遠既近，$name的心跳聲和喘氣聲加快。
+
+片刻，一隻長滿長毛的頭出現在枝頭上，大大的鼻子顯得特別明顯。$name定睛一看一隻長著橙棕色毛髮，腹部則是淡黃色，大鼻子掛在臉上的猴子探頭盯著$name的猴子。
+
+$name驚喜地發現，這是長鼻猴！
+
+接著，許多的長鼻猴開始紛紛出現，仔細數數也有二三十只，原來這裡是長鼻猴的棲息地！
+
+$name被它們深深吸引，靜靜地欣賞和觀察長鼻猴的姿態。忽然，遠處傳來幾聲槍響，受到驚嚇的猴子們四處逃開。
+
+$name順著聲音得到方向看去，發現前面有人影出沒……
+[[往前找尋人影]]
+[[不理會，繼續欣賞風景]]</tw-passagedata><tw-passagedata pid="40" name="無視聲音的干擾" tags="end" position="1050,550" size="100,100">$name選擇無視聲音的干擾。
+
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生是个對野生動物並不關心的人類。
+
+獲得野生動物保護家--0颗星：對野生動物不關心。]</tw-passagedata><tw-passagedata pid="41" name="往前找尋人影" tags="" position="925,675" size="100,100">$name往人影的方向前進。穿過樹叢，$nam3從遠方發現有批人在樹下穿著統一綠色迷彩服的人在樹下鬼鬼祟祟。
+
+$name沒有貿然前行，躲在樹叢裡偷看，發現這是一批訓練有素的人。
+
+他們居然將長臂猴裝進箱子裡, 同時手裡各拿了麻醉槍。那些猴子一動也不動，看起來不幸被麻醉彈打中昏迷。
+
+$name明白這是一群非法捕獵者！
+
+$name決定
+[[回頭尋求幫助]]
+[[在原地打電話報警]]
+[[跟踪]]</tw-passagedata><tw-passagedata pid="42" name="不理會，繼續欣賞風景" tags="end" position="800,675" size="100,100">$name選擇不理會槍聲，繼續悠閒地欣賞風景。
+
+(text-colour:red)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生是个對野生動物並不關心的人類。
+
+獲得野生動物保護家--0颗星：對野生動物不關心。]</tw-passagedata><tw-passagedata pid="43" name="回頭尋求幫助" tags="end" position="800,800" size="100,100">事不宜遲，$name回頭狂跑，回到了度假村。
+
+$name著急尋找度假村的工作人員幫忙。工作人員來到了現場，發現了長鼻猴的毛髮。
+
+眾人只好打電話給野生動物保護局的人。
+
+對方讓大家回去，接下來的調差全部由保護局負責。
+
+$name認為自己已經做到了民眾該做的事。
+
+(text-colour:orange)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+$name处理野生動物事件的手法有待进步。
+
+獲得野生動物保護家--0.5颗星：“略有积极”的探險者的称号。]]</tw-passagedata><tw-passagedata pid="44" name="在原地打電話報警" tags="end" position="925,800" size="100,100">$name偷偷地打電話報警，在一陣慌亂中不慎暴露了蹤跡，偷獵者聽到了聲響發現了$name。
+
+$name為了保命拼命逃跑。結果不慎掉入深坑，受了重傷。
+
+(text-colour:magenta)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+保護動物，不是要你賠上自己的性命，應該要明智的選擇正確的決策。但保護野生動物的決心，值得給一顆星。
+
+解锁（野生動物保護家——1颗星：新手探險者）]]</tw-passagedata><tw-passagedata pid="45" name="跟踪" tags="" position="1050,800" size="100,100">順著他們的蹤跡，$name眼睜睜看著他們將要上車離開，$name決定偷偷潛入車隨著他們前往據點。
+
+$name在半路時被他們發現，為了躲避追捕，$name緊急跳車，掉進了身邊的森林，被在觀察野生動物的專家所救。
+
+(text-colour:black)+(bg:white)[你好，我是政府支持並贊助的野生保育動物組織，「荒野共生」的領導人。我的伙伴在草叢中發現了你，便將你帶回來了。在你昏迷期間，嘴裡陸陸續續說著“救救長臂猴”，“別跑”，相信你是遇到了捕獵者了。 我們這裡正在追查他們的下落，你不介意的話，可以選擇和我們一起！]
+
+於是，$name選擇
+[[好的，沒問題！]]
+[[謝謝你的邀請，不過我受傷了。]]
+[[我只是路過的。]]</tw-passagedata><tw-passagedata pid="46" name="謝謝你的邀請，不過我受傷了。" tags="end" position="775,925" size="100,100">$name道：”謝謝你的邀請，不過我受傷了，想要回去。你們是專業人士，不如就交給你們去處理吧！“
+
+(text-colour:magenta)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+保護動物，不是要你賠上自己的性命，應該要明智的選擇正確的決策。但保護野生動物的決心，值得給一顆星。
+
+解锁（野生動物保護家——1颗星：新手探險者）]]
+</tw-passagedata><tw-passagedata pid="47" name="我只是路過的。" tags="end" position="900,925" size="100,100">$name道：&quot;噢，我只是路過的，我就先走了&quot;，便轉頭就走了。
+
+(text-colour:orange)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+$name处理野生動物事件的手法有待进步。
+
+獲得野生動物保護家--0.5颗星：“略有积极”的探險者的称号。]]</tw-passagedata><tw-passagedata pid="48" name="好的，沒問題！" tags="" position="1050,925" size="100,100">$name道：“好的，沒問題！我們現在就出發吧！”
+
+$name欣然同意專家的建議，他們坐上車，順著線索來到了森林深處。
+
+“我們到了，這裡就是長鼻猴的棲息地中心。”
+
+“你看，這是什麼？“
+
+$name揭下定在告示板的海報，是「自然零距離」度假村的宣傳海報。
+
+倆人仔細研究，發現這裡正被某大型生態旅遊公司開發為高端度假村。
+
+海報上，公司聲稱其計劃不會破壞環境，反而會帶來更大的資金來支持保護該區域。
+
+$name： “生态旅游的名义下，这片栖息地是否真的会得到保护，还是只是商业化的借口？我们该如何抉择？”
+
+[[合作開發，尋求共贏]]
+[[反對開發，保護原生態]]</tw-passagedata><tw-passagedata pid="49" name="合作開發，尋求共贏" tags="" position="900,1050" size="100,100">$name他們決定於該公司合作開發，尋求共贏。
+
+ $name：“如果我們能參與專案設計，或許可以確保環境保護得到真正落實，同時吸引更多資源。”
+ 
+ [[討論度假村建成後的收入投入保護項目]]
+ [[度假村建成的同時限制遊客數量]]</tw-passagedata><tw-passagedata pid="50" name="反對開發，保護原生態" tags="" position="1050,1050" size="100,100">$name他們反對該公司對環境的開發，保護該環境的原生態。
+
+$name：“我們不能讓這片棲息地被破壞，生態旅遊只會加速這裡的消亡。反對開發的決定無疑是站在保護的立場上，但要考慮到保護資金的來源。”
+
+[[尋求政府與環保組織的支持]]
+[[探索替代的開發區]]
+[[極力反對]]</tw-passagedata><tw-passagedata pid="51" name="討論度假村建成後的收入投入保護項目" tags="end" position="775,1050" size="100,100">$name他們成功與公司合作，度假村建成後部分收入確實投入了保護長鼻猴棲息地的項目。
+
+但隨著遊客增加，猴群的行為和棲息地環境受到了負面影響。隨著遊客數量增加，長鼻猴的行為發生了變化，它們變得更加依賴人類提供的食物，甚至開始接近度假村區域覓食。
+
+雖然資金支持帶來了保護項目，但遊客活動擾亂了猴群的自然行為模式，長期來看可能對猴群產生不可逆的影響。
+
+這件事情透過新聞傳到了$name和專家的耳朵裡，不禁痛心。他們跑到了公司了解詳情。事已至此，他們不得不放棄。
+
+(text-colour:blue)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+在保護野生動物上表現良好。
+
+獲得野生動物保護家－2顆星：中級野生動物保護者的稱號]]</tw-passagedata><tw-passagedata pid="52" name="度假村建成的同時限制遊客數量" tags="end" position="800,1175" size="100,100">$name成功與公司合作，並與公司討論，要求度假村限制遊客數量，並設立更多的禁入區域，以減少對猴群的干擾。
+
+公司同意調整計劃，但這也導致了遊客數量下降，度假村收入減少。
+
+$name選擇了合作開發，但由於疏於監督，公司在實際開發過程中並未嚴格遵守環保承諾，導致長鼻猴棲息地受到了不可逆的破壞。
+
+$name的失誤導致棲息地嚴重受損，猴群數量銳減，$name必須承擔責任，並且尋找修復生態的方法。
+
+(text-colour:green)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生在保護野生動物表現優異。
+
+獲得野生動物保護家－3顆星：野生動物的英雄的稱號]]</tw-passagedata><tw-passagedata pid="53" name="尋求政府與環保組織的支持" tags="end" position="925,1175" size="100,100">$name成功爭取政府和環保組織的支持，阻止了度假村的開發計劃，長鼻猴的棲息地得以保留。
+
+然而，開發案取消後，地方經濟受到了影響，導致政府削減了對保護區的預算，$name必須面對資金短缺的挑戰。
+
+$name到處籌款不得，最後導致保護區計劃不了了之。
+
+最終，這片棲息地還是被開發了。
+
+(text-colour:blue)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生在保護野生動物上表現良好。
+
+獲得野生動物保護家－2顆星：中級野生動物保護者的稱號]]</tw-passagedata><tw-passagedata pid="54" name="探索替代的開發區" tags="end" position="1050,1175" size="100,100">$name透過和私人投資商合作，為公司成功找到新的開發地點，讓公司放棄原有的地點，也成功募款。同時在棲息地建立保護區得以維持。$name積極推動當地社區參與生態保育工作，減少對經濟開發的依賴。
+
+$name成功建立了一個自我維持的生態保護模式，長鼻猴的棲息地得到了更持久的保護，$name的成功經驗也被推廣到其他區域。
+
+(text-colour:green)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生在保護野生動物表現優異。
+
+獲得野生動物保護家－3顆星：野生動物的英雄的稱號]]</tw-passagedata><tw-passagedata pid="55" name="極力反對" tags="end" position="1175,1175" size="100,100">$name採取了過於激進的反對策略，導致與地方政府的關係惡化，政府決定將棲息地轉為其他商業用途，反而加劇了對環境的破壞。
+
+由於未能妥善處理與地方政府的關係，$name的激進策略導致了更糟糕的結果，棲息地被大規模破壞，保育工作面臨全面失敗。
+
+(text-colour:magenta)[[結束]&lt;continue|
+(click-replace:?continue)
+[結束
+
+蘇海生蘇海生在保育野生動物上經驗不足，但值得稱讚
+
+獲得野生動物保護家－1顆星：新手探險者稱號]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
