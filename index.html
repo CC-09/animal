@@ -9,14 +9,29 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Untitled Story.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Untitled Story" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="CB467E9A-07C9-43C2-B3D8-5CAB4BD2933B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="end" color="red"></tw-tag><tw-passagedata pid="1" name="角色名字設定" tags="" position="700,25" size="100,100">在故事開始之前，請玩家為自己取名：
+<tw-storydata name="Untitled Story" startnode="1" creator="Twine" creator-version="2.9.2" format="Harlowe" format-version="3.3.9" ifid="CB467E9A-07C9-43C2-B3D8-5CAB4BD2933B" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
+  font-family: "SimSun", serif;
+}
+
+tw-passage {
+  font-size: 18px;
+}
+
+tw-story {
+  background-color: #F5F5DC; /* 将背景颜色改为浅灰色，您可以更换为任意颜色 */
+  color: #000000; /* 字体颜色设为黑色 */
+}
+
+tw-passage {
+  background-color: transparent; /* 保持 Passage 背景透明 */
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="end" color="red"></tw-tag><tw-passagedata pid="1" name="角色名字設定" tags="" position="700,25" size="100,100">在故事開始之前，請玩家為自己取名：
 (input-box: bind $name, &quot;XXX=&quot;,1,&quot;蘇海生&quot;)
 (set:$name to &quot;蘇海生&quot;)
 
 以下是故事設定
 [展開]&lt;continue|
 (click-replace:?continue)
-[(text-colour:green)[故事角色設定1：（野生動物保護家——3颗星：野生動物的英雄）]
+[(text-colour:green)[故事角色設定1：（野生動物保護家——3颗星：高級野生動物的英雄）]
 (text-colour:blue)[故事角色設定2：（野生動物保護家——2颗星：中級野生動物保護者）]
 (text-colour:magenta)[故事角色設定3：（野生動物保護家——1颗星：新手探險者）]
 (text-colour:orange)[故事角色設定4：（野生動物保護家--0.5颗星：“略有积极”的探險者）]
@@ -35,7 +50,7 @@
 [[明天一定要去看]]
 [[算了吧，錯過就錯過了]]</tw-passagedata><tw-passagedata pid="4" name="到旁邊的森林走走看看" tags="" position="1000,300" size="100,100">夏日的陽光明媚，通往森林的小徑吹來陣陣涼風。遠離海邊的森林顯得寂靜，偶爾傳來幾聲海鷗的鳴叫聲。  
 
-陽光透過斑駁的樹葉落在$name的肩上，驅散了涼風帶來的寒意。 $name一邊散步一邊欣賞風景，不知不覺走入森林的深處。
+陽光透過斑駁的樹葉落在$name的肩上，驅散了涼風帶來的寒意。$name一邊散步一邊欣賞風景，不知不覺走入森林的深處。
 
 當反應過來的時候，$name已經走到了小徑的分叉口…
 [[原路返回]]
@@ -54,7 +69,7 @@ $name一如既往地在沙灘上搗亂。$name踢倒了其他孩子建好的沙�
 
 $name對這種活動並不感興趣，$name覺得這種東西無聊透頂。
 
-$name打定主意要[[偷偷溜出去]]</tw-passagedata><tw-passagedata pid="7" name="明天一定要去看" tags="" position="200,425" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱密的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
+$name打定主意要[[偷偷溜出去]]。</tw-passagedata><tw-passagedata pid="7" name="明天一定要去看" tags="" position="200,425" size="100,100">天色漸暗，度假村的工作人員帶領大家走向一片較為隱密的沙灘，那裡是海龜的天然棲息地。月光灑在沙灘上，映照出一片銀白的光輝。
 
 $name屏住呼吸，跟在隊伍的最後，$name害怕驚動了這些神秘的海洋生物……
 
@@ -66,11 +81,11 @@ $name感到一陣激動，這個龐然大物讓$name覺得自己彷彿置身於�
 
 $name選擇[[靜悄悄地觀察他們]]。</tw-passagedata><tw-passagedata pid="8" name="靜悄悄地觀察他們" tags="" position="200,550" size="100,100">那些人躡手躡腳地靠近海龜，當他們靠近到足夠近時，其中一人開始迅速將海龜剛產下的蛋撿起，放入一個布袋中。
 
-$name感到心頭一緊，並且立刻明白這兩個人是在偷海龜蛋。$name知道，海龜蛋是受法律保護的，偷走這些蛋意味著那些小海龜將失去生命的機會……
+$name感到心頭一緊，並且立刻明白這兩個人是在偷海龜蛋。$name知道，偷海龜蛋的行為是違法的，偷走這些蛋意味著那些小海龜將失去生存的機會……
 
 於是，$name
 [[選擇袖手旁觀]]
-[[猶豫片刻，鼓起勇氣]]</tw-passagedata><tw-passagedata pid="9" name="選擇袖手旁觀" tags="" position="75,675" size="100,100">$name感到心跳加速，$name知道這是不對的行為，海龜蛋是受保護的。
+[[猶豫片刻，鼓起勇氣]]</tw-passagedata><tw-passagedata pid="9" name="選擇袖手旁觀" tags="" position="75,675" size="100,100">$name感到心跳加速，$name知道偷海龜蛋是違法的行為。
 
 正當$name考慮是否要喊出聲來或者去告訴工作人員時，$name猶豫了。
 
@@ -80,11 +95,11 @@ $name想，也許這是別人的事，與自己無關。
 (click-replace:?continue)
 [$name站在那里，看著那兩個人將海龜蛋一顆顆偷走。
 
-雖然內心有些不安，$name想大聲呼叫，但$name最終還是選擇了沉默。
+雖然內心有些不安，但$name最終還是選擇了沉默。
 
 $name心裡想着，如果自己什麼都不做，問題就不會變得複雜，$name[[退縮了]]。]</tw-passagedata><tw-passagedata pid="10" name="猶豫片刻，鼓起勇氣" tags="" position="200,675" size="100,100">$name大聲喊道：「快住手！你們不能這樣！」
 
-$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，目光堅定地看著他們。
+$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，看著他們。
 
 $name
 [[退縮了]]
@@ -120,7 +135,7 @@ $name發現，選擇袖手旁觀並不能讓事情變得簡單，反而讓自己
 
 面對不公和錯誤時，沉默和旁觀並不是正確的選擇。
 
-獲得野生動物保護家--0颗星：對野生動物不關心的稱號]]</tw-passagedata><tw-passagedata pid="13" name="大聲呼叫，引起注意" tags="" position="200,800" size="100,100">$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，目光堅定地看著他們。
+獲得野生動物保護家--0颗星：對野生動物不關心的稱號]]</tw-passagedata><tw-passagedata pid="13" name="大聲呼叫，引起注意" tags="" position="200,800" size="100,100">$name的喊聲引起了注意，那兩個人頓時愣住了，回頭看到一個小孩正站在那裡，看著他們。
 
 $name大聲呼喊，成功引起了周圍人的注意。
 
@@ -257,11 +272,11 @@ $name十分懊悔，这一份愧疚将会伴随$name一辈子。
 
 獲得野生動物保護家--0颗星：對野生動物不關心的稱號]]</tw-passagedata><tw-passagedata pid="26" name="偷偷溜出去" tags="" position="400,550" size="100,100">夜晚降臨，$name在其他人都前往沙灘觀看海龜時，悄悄地從後門溜了出去。
 
-$name來到一片較為僻靜的沙灘，打算尋找一些可以搗亂的目標。
+$name來到一片較為僻靜的沙灘，打算尋找一些樂子。
 
 就在這時，$name看到一隻巨大的綠海龜正在沙灘上艱難地爬行……
 
-$name心生一計，悄悄走近海龜，看到它開始挖坑準備產卵。
+$name悄悄走近海龜，看到它開始挖坑準備產卵。
 
 於是$name打算……
 [[拿走幾顆海龜蛋]]
@@ -339,7 +354,7 @@ $name非常激動，因為這是$name第一次看見海龜。
 
 $name感到一陣激動，這個龐然大物讓$name覺得自己彷彿置身於一個奇幻的世界。
 
-綠海龜在找到一處合適的地方後，開始用它的鰭挖掘一個大坑。挖坑的過程看起來很費力，但海龜卻毫不放棄。
+綠海龜再次回到熟悉的故鄉後，開始挖出一個大坑。挖坑的過程看起來很費力，但海龜卻毫不放棄。
 
 $name的眼睛一眨不眨地盯著，心中充滿了敬畏。
 
@@ -392,15 +407,16 @@ $name對野生動物並不關心。
 
 獲得野生動物保護家--0颗星：對野生動物不關心的称号]]</tw-passagedata><tw-passagedata pid="39" name="尋找聲音的出處" tags="" position="925,550" size="100,100">$name轉頭到處觀望，企圖找到聲音的來源。密密麻麻的樹木上似乎有什麼在攢動。$name有點害怕，不知不覺屏氣警戒地觀望。此時樹上的聲響由遠既近，$name的心跳聲和喘氣聲加快。
 
-片刻，一隻長滿長毛的頭出現在枝頭上，大大的鼻子顯得特別明顯。$name定睛一看一隻長著橙棕色毛髮，腹部則是淡黃色，大鼻子掛在臉上的猴子探頭盯著$name的猴子。
+片刻，一隻長滿長毛的頭出現在枝頭上，大大的鼻子顯得特別明顯。$name定睛一看
+一隻長著橙棕色毛髮，腹部則是淡黃色，大鼻子掛在臉上的猴子探頭盯著$name的猴子
 
 $name驚喜地發現，這是長鼻猴！
 
-接著，許多的長鼻猴開始紛紛出現，仔細數數也有二三十只，原來這裡是長鼻猴的棲息地！
+接著，許多的長鼻猴開始紛紛出現，仔細數數也有20、30只，原來這裡是長鼻猴的棲息地！
 
-$name被它們深深吸引，靜靜地欣賞和觀察長鼻猴的姿態。忽然，遠處傳來幾聲槍響，受到驚嚇的猴子們四處逃開。
+$name被它們深深吸引，靜靜地欣賞和觀察長鼻猴的姿態。忽然，遠處傳來幾聲異響，受到驚嚇的猴子們四處逃開。
 
-$name順著聲音得到方向看去，發現前面有人影出沒……
+$name順著聲音的方向看去，發現前面有人影出沒……
 [[往前找尋人影]]
 [[不理會，繼續欣賞風景]]</tw-passagedata><tw-passagedata pid="40" name="無視聲音的干擾" tags="end" position="1050,550" size="100,100">$name選擇無視聲音的干擾。
 
@@ -410,11 +426,9 @@ $name順著聲音得到方向看去，發現前面有人影出沒……
 
 $name是个對野生動物並不關心的人類。
 
-獲得野生動物保護家--0颗星：對野生動物不關心。]]</tw-passagedata><tw-passagedata pid="41" name="往前找尋人影" tags="" position="925,675" size="100,100">$name往人影的方向前進。穿過樹叢，$name從遠方發現有批人在樹下穿著統一綠色迷彩服的人在樹下鬼鬼祟祟。
+獲得野生動物保護家--0颗星：對野生動物不關心。]]</tw-passagedata><tw-passagedata pid="41" name="往前找尋人影" tags="" position="925,675" size="100,100">$name往人影的方向前進。穿過樹叢，$name從遠方發現有批人在樹下鬼鬼祟祟。
 
-$name沒有貿然前行，躲在樹叢裡偷看，發現這是一批訓練有素的人。
-
-他們居然將長臂猴裝進箱子裡, 同時手裡各拿了麻醉槍。那些猴子一動也不動，看起來不幸被麻醉彈打中昏迷。
+$name沒有貿然前行，躲在樹叢裡偷看，發現他們居然將長鼻猴裝進箱子裡, 各自手裡拿著槍。
 
 $name明白這是一群非法捕獵者！
 
@@ -439,13 +453,13 @@ $name著急尋找度假村的工作人員幫忙。工作人員來到了現場，
 
 $name認為自己已經做到了民眾該做的事。
 
-(text-colour:orange)[[結束]&lt;continue|
+(text-colour:magenta)[[結束]&lt;continue|
 (click-replace:?continue)
 [結束
 
-$name处理野生動物事件的手法有待进步。
+保護動物，不是要你賠上自己的性命，應該要明智的選擇正確的決策。但保護野生動物的決心，值得給一顆星。
 
-獲得野生動物保護家--0.5颗星：“略有积极”的探險者的称号。]]</tw-passagedata><tw-passagedata pid="44" name="在原地打電話報警" tags="end" position="925,800" size="100,100">$name偷偷地打電話報警，在一陣慌亂中不慎暴露了蹤跡，偷獵者聽到了聲響發現了$name。
+獲得野生動物保護家——1颗星：新手探險者的称号。]]</tw-passagedata><tw-passagedata pid="44" name="在原地打電話報警" tags="end" position="925,800" size="100,100">$name偷偷地打電話報警，在一陣慌亂中不慎暴露了蹤跡，偷獵者聽到了聲響發現了$name。
 
 $name為了保命拼命逃跑。結果不慎掉入深坑，受了重傷。
 
@@ -455,9 +469,14 @@ $name為了保命拼命逃跑。結果不慎掉入深坑，受了重傷。
 
 保護動物，不是要你賠上自己的性命，應該要明智的選擇正確的決策。但保護野生動物的決心，值得給一顆星。
 
-解锁（野生動物保護家——1颗星：新手探險者）]]</tw-passagedata><tw-passagedata pid="45" name="跟踪" tags="" position="1050,800" size="100,100">順著他們的蹤跡，$name眼睜睜看著他們將要上車離開，$name決定偷偷潛入車隨著他們前往據點。
+獲得野生動物保護家——1颗星：新手探險者的称号。]]
+</tw-passagedata><tw-passagedata pid="45" name="跟踪" tags="" position="1050,800" size="100,100">順著他們的踪跡，$name看著他們即將上車離開，在手足無措之際，$name的肩膀被人拍了一下。
 
-$name在半路時被他們發現，為了躲避追捕，$name緊急跳車，掉進了身邊的森林，被在觀察野生動物的專家所救。
+$name驚恐轉身，有位看起來約莫四十多歲的中年人，穿著青色制服站在$name的身後。
+
+$name來不及發出驚恐的叫聲就被中年人阻止，他指了指非法捕獵者的方向，一邊示意安靜。兩人面面相覷的時候，捕獵者就已經上車離開了。
+
+他們鬆了口氣。
 
 (text-colour:black)+(bg:white)[你好，我是政府支持並贊助的野生保育動物組織，「荒野共生」的領導人。我的伙伴在草叢中發現了你，便將你帶回來了。在你昏迷期間，嘴裡陸陸續續說著“救救長臂猴”，“別跑”，相信你是遇到了捕獵者了。 我們這裡正在追查他們的下落，你不介意的話，可以選擇和我們一起！]
 
@@ -606,11 +625,11 @@ $name對野生動物並不關心。
 [[依賴政府的力量]]
 [[與非營利組織建立合作關係]]</tw-passagedata><tw-passagedata pid="60" name="依賴政府的力量" tags="" position="1200,800" size="100,100">$name決定依賴政府力量，希望透過法律途徑解決問題。
 
-$name將非法伐木的情況用手機拍下，尋求政府協助打擊非法伐木。
+$name將非法伐木的情況用手機拍下，尋求政府的協助打擊非法伐木。
 
-但政府人員卻說：“我們可以介入，但需要時間和證據，期間可能會有更多損失。”
+但對方說：“我們可以介入，但需要時間和證據，期間可能會有更多損失。”
 
-官僚程序導致行動遲緩，犀鳥的棲息地在政府介入之前已經遭受了嚴重破壞。雖然最終非法伐木被制止，但犀鳥的數量急劇下降，生態系統受損。
+犀鳥的棲息地在政府介入之前已經遭受了嚴重破壞。雖然最終非法伐木被制止，但犀鳥的數量急劇下降，生態系統受損。
 
 [[繼續]]</tw-passagedata><tw-passagedata pid="61" name="與非營利組織建立合作關係" tags="" position="1350,800" size="100,100">$name聯繫了非營利組織建立了更緊密的合作關係，雖然有效率，但資金方面卻是一個棘手的問題。
 
@@ -702,7 +721,7 @@ $name將證據提交給了政府部門，希望他們能盡快採取措施，[[�
 
 $name又回到犀鳥團隊，再次等待野生動物的呼叫……
 
-(text-colour:blue)[[結束]&lt;continue|
+(text-colour:green)[[結束]&lt;continue|
 (click-replace:?continue)
 [結束
 
